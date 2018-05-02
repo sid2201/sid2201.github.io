@@ -57,8 +57,15 @@
                               <p>Whether you’re new to cannabis, a medical marijuana patient, or a seasoned consumer, Herbie is the perfect destination for you!</p>
                            </div>
                            <br>
-                           <!-- <div><a class="app-link" id="appleLink" href="http://www.google.com"><img class="app-icon" src="template/badgeappstore.png"/></a><a class="app-link" id="googleLink" href="http://www.google.com"><img class="app-icon" src="template/badgegoogleplay.png"/></a></div> -->
-                           <div class="description">
+<div>
+<a class="app-link" id="appleLink" target="_blank" href="https://itunes.apple.com/us/app/match-herbie/id1373757099?ls=1&mt=8">
+        <img class="app-icon" src="template/badgeappstore.png" />
+    </a>
+<a class="app-link" target="_blank" id="googleLink" href="https://play.google.com/store/apps/details?id=com.matchherbie">
+        <img class="app-icon" src="template/badgegoogleplay.png" />
+    </a>
+</div>
+                           <!-- <div class="description">
                               <p style="font-size:24px;">Want us to notify you when we ship the product?</p>
                             <form name="submit-to-google-sheet">
                                  <input type="email" name="email" placeholder="Email Address" style="padding:5px;outline:none;" required>
@@ -67,7 +74,7 @@
                               <div class="alert alert-success">
                                  <p>Thank you. We will notify you when we go live.</p>
                               </div>
-                           </div>
+                           </div> -->
                         </div>
                         <footer class="footer">
                            <div>
@@ -83,25 +90,25 @@
       <div>
          
          <script>
-            const scriptURL =
-                'https://script.google.com/macros/s/AKfycbyMR4Ij1p4D23yzOH_d8YVq9Za8pxitawui8OnxMaiLWx10Axs/exec'
-            const form = document.forms['submit-to-google-sheet']
+            // const scriptURL =
+            //     'https://script.google.com/macros/s/AKfycbyMR4Ij1p4D23yzOH_d8YVq9Za8pxitawui8OnxMaiLWx10Axs/exec'
+            // const form = document.forms['submit-to-google-sheet']
 
-            form.addEventListener('submit', e => {
-                e.preventDefault()
-                this.loading = true;
-                fetch(scriptURL, {
-                        method: 'POST',
-                        body: new FormData(form)
-                    })
-                    .then(response => {
-                        console.log("success");
-                        $('input').val("");
-                        $("input").prop('disabled', true);
-                        $('.alert.alert-success').css('opacity', '1');
-                    })
-                    .catch(error => console.error('Error!', error.message))
-            })
+            // form.addEventListener('submit', e => {
+            //     e.preventDefault()
+            //     this.loading = true;
+            //     fetch(scriptURL, {
+            //             method: 'POST',
+            //             body: new FormData(form)
+            //         })
+            //         .then(response => {
+            //             console.log("success");
+            //             $('input').val("");
+            //             $("input").prop('disabled', true);
+            //             $('.alert.alert-success').css('opacity', '1');
+            //         })
+            //         .catch(error => console.error('Error!', error.message))
+            // })
          </script>
         <script src="template/main.min.js"></script>
       </div>
