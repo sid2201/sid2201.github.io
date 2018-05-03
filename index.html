@@ -1,71 +1,111 @@
 <html>
-   <head>
-      <meta charset="utf-8"/>
-      <link rel="icon" type="image/x-icon" href="./favicon.ico"/>
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-      <title>Herbie</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1"/>
-      <link href="http://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" type="text/css"/>
-      <meta name="description" content="Let us help you filter and find dispensaries that sell recreational and medical cannabis near you."/>
-      <meta name="keywords" content="Herbie,A,fun,way,find,your,next,score."/>
-      <meta name="og:locale" property="og:locale" content="en_US"/>
-      <meta name="og:type" property="og:type" content="website"/>
-      <meta name="og:site_name" property="og:site_name" content="Herbie"/>
-      <meta name="og:title" property="og:title" content="Herbie"/>
-      <meta name="og:description" property="og:description" content="A fun way find your next score."/>
-      <meta name="og:image" property="og:image" content="https://s3-us-west-2.amazonaws.com/skygear-cloud-asset/appsite/064df7a7-dd40-4896-b79c-c9d50273cbaa-herbie.png"/>
-      <meta name="og:image:type" property="og:image:type" content="image/png"/>
-      <meta name="og:image:width" property="og:image:width" content="1024"/>
-      <meta name="og:image:height" property="og:image:height" content="1024"/>
-      <link rel="stylesheet" href="template/main.min.css"/>
-      <style>
-          .alert.alert-success {
-                opacity: 0; transition: opacity 0.35s;
-          }
-      </style>
-   <body>
-      <div>
-         <div class="dark">
-            <div class="blurred-cover" style="background-color:rgb(164,228,196);background-image:none;filter:none;-webkit-filter:none;"></div>
-         </div>
-         <div class="white-background"></div>
-         <main id="main">
-            <section class="hero">
-               <div class="app-container fill">
-                  <div class="row">
-                     <div class="col-sm-6 col-xs-12 fill flex-box left">
-                        <div class="phone-container">
-                           <img src="template/phoneframe.png" class="frame-image"/>
-                           <div id="carousel" class="carousel fade" data-ride="carousel">
-                              <div class="carousel-inner">
-                                 <div class="item active"><img src="46f2ac09-338b-474a-8011-40174b9eebcf-screenshot.png" alt="46f2ac09-338b-474a-8011-40174b9eebcf-screenshot.png"/></div>
-                                 <div class="item "><img src="d4595341-8330-4cd4-b111-1cde989a37d0-screenshot.png" alt="d4595341-8330-4cd4-b111-1cde989a37d0-screenshot.png"/></div>
-                                 <div class="item "><img src="c5fdba6a-109f-4a60-b064-c9bd44f49d73-screenshot.png" alt="c5fdba6a-109f-4a60-b064-c9bd44f49d73-screenshot.png"/></div>
-                                 <div class="item "><img src="a1f112e4-03ac-400d-8997-b8af72e81492-screenshot.png" alt="a1f112e4-03ac-400d-8997-b8af72e81492-screenshot.png"/></div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-sm-6 col-xs-12 fill flex-box right">
-                        <div class="app-content">
-                           <h2 class="app-name app-field">Herbie</h2>
-                           <h1 class="tag-line app-field">A fun way to find your next strain.</h1>
-                           <br>
-                           <div class="description app-field">
-                              <p>We make the process of finding the right strains and products for you fast, simple, and comfortable. </p>
-                              
-                              <p>Whether you’re new to cannabis, a medical marijuana patient, or a seasoned consumer, Herbie is the perfect destination for you!</p>
-                           </div>
-                           <br>
-<div>
-<a class="app-link" id="appleLink" target="_blank" href="https://itunes.apple.com/us/app/match-herbie/id1373757099?ls=1&mt=8">
-        <img class="app-icon" src="template/badgeappstore.png" />
-    </a>
-<a class="app-link" target="_blank" id="googleLink" href="https://play.google.com/store/apps/details?id=com.matchherbie">
-        <img class="app-icon" src="template/badgegoogleplay.png" />
-    </a>
-</div>
-                           <!-- <div class="description">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="http://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" type="text/css"
+    />
+    <!-- COMMON TAGS -->
+    <meta charset="utf-8">
+    <title>Match Herbie</title>
+    <!-- Search Engine -->
+    <meta name="description" content="A fun way to find your next strain.">
+    <meta name="keywords" content="Match,Herbie,A,fun,way,find,your,next,score." />
+    <meta name="image" content="https://herbie-images.s3.amazonaws.com/og_image.png">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="Match Herbie">
+    <meta itemprop="description" content="A fun way to find your next strain.">
+    <meta itemprop="image" content="https://herbie-images.s3.amazonaws.com/og_image.png">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Match Herbie">
+    <meta name="twitter:description" content="A fun way to find your next strain.">
+    <meta name="twitter:image:src" content="https://herbie-images.s3.amazonaws.com/og_image.png">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="Match Herbie">
+    <meta name="og:description" content="A fun way to find your next strain.">
+    <meta name="og:image" content="https://herbie-images.s3.amazonaws.com/og_image.png">
+    <meta name="og:url" content="http://herbie.live/">
+    <meta name="og:site_name" content="Match Herbie">
+    <meta name="og:type" content="website">
+    <link rel="stylesheet" href="template/main.min.css" />
+    <style>
+        .alert.alert-success {
+            opacity: 0;
+            transition: opacity 0.35s;
+        }
+    </style>
+
+    <body>
+        <div>
+            <div class="dark">
+                <div class="blurred-cover" style="background-color:rgb(164,228,196);background-image:none;filter:none;-webkit-filter:none;"></div>
+            </div>
+            <div class="white-background"></div>
+            <main id="main">
+                <section class="hero">
+                    <div class="app-container fill">
+                        <div class="row">
+                            <div class="col-sm-6 col-xs-12 fill flex-box left">
+                                <div class="phone-container">
+                                    <img src="template/phoneframe.png" class="frame-image" />
+                                    <div id="carousel" class="carousel fade" data-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="item active">
+                                                <img src="46f2ac09-338b-474a-8011-40174b9eebcf-screenshot.png" alt="46f2ac09-338b-474a-8011-40174b9eebcf-screenshot.png"
+                                                />
+                                            </div>
+                                            <div class="item ">
+                                                <img src="d4595341-8330-4cd4-b111-1cde989a37d0-screenshot.png" alt="d4595341-8330-4cd4-b111-1cde989a37d0-screenshot.png"
+                                                />
+                                            </div>
+                                            <div class="item ">
+                                                <img src="c5fdba6a-109f-4a60-b064-c9bd44f49d73-screenshot.png" alt="c5fdba6a-109f-4a60-b064-c9bd44f49d73-screenshot.png"
+                                                />
+                                            </div>
+                                            <div class="item ">
+                                                <img src="a1f112e4-03ac-400d-8997-b8af72e81492-screenshot.png" alt="a1f112e4-03ac-400d-8997-b8af72e81492-screenshot.png"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-xs-12 fill flex-box right">
+                                <div class="app-content">
+                                    <h2 class="app-name app-field">Match Herbie</h2>
+                                    <h1 class="tag-line app-field">A fun way to find your next strain.</h1>
+                                    <br>
+                                    <div class="description app-field">
+                                        <p>We make the process of finding the right strains and products for you fast, simple,
+                                            and comfortable. </p>
+
+                                        <p>Whether you’re new to cannabis, a medical marijuana patient, or a seasoned consumer,
+                                            Match Herbie is the perfect destination for you!</p>
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <a class="app-link" id="appleLink" target="_blank" href="https://itunes.apple.com/us/app/match-herbie/id1373757099?ls=1&mt=8">
+                                            <img class="app-icon" src="template/badgeappstore.png" />
+                                        </a>
+                                        <a class="app-link" target="_blank" id="googleLink" href="https://play.google.com/store/apps/details?id=com.matchherbie">
+                                            <img class="app-icon" src="template/badgegoogleplay.png" />
+                                        </a>
+                                    </div>
+                                    <div class="description" style="
+margin-top: 20px;
+">
+                                        <p style="font-size:18px;">Want to use this as a kiosk in your dispensary? Let the app do the selling. Please
+                                            reach out to
+                                            <a href="mailto:hari@f22labs.com">hari@f22labs.com</a>
+                                        </p>
+                                        <a href="mailto:hari@f22labs.com">
+
+                                        </a>
+                                    </div>
+                                    <!-- <div class="description">
                               <p style="font-size:24px;">Want us to notify you when we ship the product?</p>
                             <form name="submit-to-google-sheet">
                                  <input type="email" name="email" placeholder="Email Address" style="padding:5px;outline:none;" required>
@@ -75,42 +115,50 @@
                                  <p>Thank you. We will notify you when we go live.</p>
                               </div>
                            </div> -->
+                                </div>
+                            </div>
                         </div>
-                        <footer class="footer">
-                           <div>
-                              <div class="row"><strong style="padding-right:22px;">Herbie</strong><a class="footer-link" href="mailto:herbie@f22labs.com">Contact Us</a></div>
-                           </div>
-                        </footer>
-                     </div>
-                  </div>
-               </div>
-            </section>
-         </main>
-      </div>
-      <div>
-         
-         <script>
-            // const scriptURL =
-            //     'https://script.google.com/macros/s/AKfycbyMR4Ij1p4D23yzOH_d8YVq9Za8pxitawui8OnxMaiLWx10Axs/exec'
-            // const form = document.forms['submit-to-google-sheet']
+                    </div>
+                </section>
+            </main>
+        </div>
+        <div>
 
-            // form.addEventListener('submit', e => {
-            //     e.preventDefault()
-            //     this.loading = true;
-            //     fetch(scriptURL, {
-            //             method: 'POST',
-            //             body: new FormData(form)
-            //         })
-            //         .then(response => {
-            //             console.log("success");
-            //             $('input').val("");
-            //             $("input").prop('disabled', true);
-            //             $('.alert.alert-success').css('opacity', '1');
-            //         })
-            //         .catch(error => console.error('Error!', error.message))
-            // })
-         </script>
-        <script src="template/main.min.js"></script>
-      </div>
-   </body>
+            <script>
+                // const scriptURL =
+                //     'https://script.google.com/macros/s/AKfycbyMR4Ij1p4D23yzOH_d8YVq9Za8pxitawui8OnxMaiLWx10Axs/exec'
+                // const form = document.forms['submit-to-google-sheet']
+
+                // form.addEventListener('submit', e => {
+                //     e.preventDefault()
+                //     this.loading = true;
+                //     fetch(scriptURL, {
+                //             method: 'POST',
+                //             body: new FormData(form)
+                //         })
+                //         .then(response => {
+                //             console.log("success");
+                //             $('input').val("");
+                //             $("input").prop('disabled', true);
+                //             $('.alert.alert-success').css('opacity', '1');
+                //         })
+                //         .catch(error => console.error('Error!', error.message))
+                // })
+            </script>
+            <script src="template/main.min.js"></script>
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118636511-1"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+
+                function gtag() {
+                    dataLayer.push(arguments);
+                }
+                gtag('js', new Date());
+
+                gtag('config', 'UA-118636511-1');
+            </script>
+        </div>
+    </body>
+
 </html>
